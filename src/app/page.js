@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className="fixed bottom-8 left-0 w-full text-center">
-        <Link legacyBehavior href="/connect-dustbin">
+        <Link legacyBehavior>
           <a className="bg-blue-500 text-white px-6 py-2 rounded-full shadow-2xl text-lg font-bold hover:bg-blue-600 transition">
             Connect Dustbin
           </a>
