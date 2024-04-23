@@ -23,6 +23,13 @@ const dustbins = [
     location: 'City Center',
     image: '/images/dustbin.png',
   },
+  {
+    id: 4,
+    name: 'Dustbin 4',
+    fillPercentage: 50,
+    location: 'DLF Mall',
+    image: '/images/dustbin.png',
+  },
 ];
 
 export default function Home() {
