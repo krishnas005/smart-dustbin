@@ -7,28 +7,28 @@ const dustbins = [
     id: 1,
     name: 'Dustbin 1',
     fillPercentage: 65,
-    isLidOpen: true, // Lid status
+    isLidOpen: true,
     image: '/images/dustbin.png',
   },
   {
     id: 2,
     name: 'Dustbin 2',
     fillPercentage: 85,
-    isLidOpen: false, // Lid status
+    isLidOpen: false,
     image: '/images/dustbin.png',
   },
   {
     id: 3,
     name: 'Dustbin 3',
     fillPercentage: 45,
-    isLidOpen: true, // Lid status
+    isLidOpen: true,
     image: '/images/dustbin.png',
   },
   {
     id: 4,
     name: 'Dustbin 4',
     fillPercentage: 50,
-    isLidOpen: false, // Lid status
+    isLidOpen: false,
     image: '/images/dustbin.png',
   },
 ];
@@ -36,7 +36,7 @@ const dustbins = [
 export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8 relative">
-      <h1 className="text-3xl font-bold text-center mb-8">Connected Devices</h1>
+      <h1 className="text-3xl font-bold text-center mb-2">Connected Devices</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         {dustbins.map((dustbin) => (
           <Link legacyBehavior key={dustbin.id} href={`/dustbin/${dustbin.id}`}>
@@ -49,9 +49,9 @@ export default function Home() {
                   </p>
                   <p className="text-sm flex items-center mt-2">
                     {dustbin.isLidOpen ? (
-                      <FaDotCircle className="mr-2 text-green-500" /> // Icon for open lid
+                      <FaDotCircle className="mr-2 text-green-500" />
                     ) : (
-                      <FaCircle className="mr-2 text-red-500" /> // Icon for closed lid
+                      <FaCircle className="mr-2 text-red-500" />
                     )}
                     {dustbin.isLidOpen ? 'Lid Open' : 'Lid Closed'}
                   </p>
@@ -62,7 +62,7 @@ export default function Home() {
                     alt={dustbin.name}
                     width={96}
                     height={96}
-                    className="w-full h-full object-cover rounded-lg" // Rounded image
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
               </div>
